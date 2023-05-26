@@ -1,0 +1,91 @@
+.encabezado{
+    position: relative;
+    display: flex;
+    width: 1366px;
+    height: 90px;
+    background: linear-gradient(#2e5c6aa6,#4a67708c),linear-gradient(#161e20a1,#2a6e8599);
+}
+.caja{
+    display: inline-block;
+    position: relative;
+    width: 1360px;
+    height: 530px;
+    background: linear-gradient(#4b5c68bd,#0f3d4cb5),linear-gradient(#69fffbde,#000000b8);
+}
+.caja2{
+    display: inline-block;
+    position: relative;
+    width: 445px;
+    height: 570px;
+    background: url(imagenes/Muneco.png) no-repeat center 56px /80% #a3c3eb;
+    box-shadow: 10px -10px 19px 2px rgb(0 0 0 / 78%);
+    left: 804px;
+    top: -42px;
+    border-radius: 21px;
+}
+.aviso1{
+    position: absolute;
+    top: 385px;
+    left: 58px;
+    font-size: 30px;
+}
+.aviso2{
+    position: absolute;
+    top: 435px;
+    left: 20px;
+    font-size: 20px;
+}
+.inputText{
+    position: absolute;
+    height: 471px;
+    width: 670px;
+    top: 10px;
+    left: 90px;
+    font-size: 23px;
+    background: #b3cfcfa6;
+}
+.outPutText{
+    position: absolute;
+    width: 423px;
+    height: 513px;   
+    left: 8px;
+    top: 10px;
+    background: #ffffff00;
+    font-size: 23px;
+    padding: 2px 2px 2px 2px;
+}
+#botones {
+    position: relative;
+    display: inline-block;
+    width: 1150px;
+    height: 45px;
+    top: -86px;
+    font-size: 12px;
+    border-radius: 21px;
+    background: #6097c754;
+    padding: 0px 50px 3px 49px;
+}
+#encripta{
+    position: absolute;
+    width: 236px;
+    height: 42px;
+    left: 140px;
+    border-radius: 14px;
+    font-size: 23px;
+}
+#desencripta{
+    position: absolute;
+    width: 236px;
+    height: 42px;
+    left: 480px;
+    border-radius: 14px;
+    font-size: 23px;
+}
+#copiar{
+    position: absolute;
+    width: 236px;
+    height: 42px;
+    left: 922px;
+    border-radius: 14px;
+    font-size: 23px;
+}
