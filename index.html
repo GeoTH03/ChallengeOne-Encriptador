@@ -13,10 +13,10 @@
     </head>
         
     <header>
-        <div class="encabezado"><img src="imagenes/logo.png" alt="Logo de alura"id="LogoAlura"></div>
+        <div class="encabezado"><img src="imagenes/logo.png" alt="Logo de alura"id="LogoAlura"><img src="imagenes/advertencia.png" alt="advertencia" id="advertencia"><h3>Solo letras minúsculas y sin acentos</h3></div>
     </header>
         <div class="caja">
-            <textarea class="inputText" id="texto" cols="30" rows="10" placeholder="Ingrese el texto a procesar" required></textarea>
+            <textarea class="inputText" id="texto" cols="30" rows="10" placeholder="Ingrese el texto a procesar" oninput="leeAreaEncriptado()" required></textarea>
             <div class="caja2">
             <textarea class="outPutText" id="resultado" cols="20" rows="10"></textarea>
             <p class="aviso1">Ningún mensaje encontrado</p>
@@ -29,6 +29,7 @@
             <button id="desencripta" onclick="iniciaDesencriptado()">Desencriptar</button>
             <button id="copiar" onclick="copiar()">Copiar</button>
         </section>
+        <div id="mensajeInvisible"></div>
     <footer><img src="imagenes/oracleOne.jpg" alt="One oracle next education" class="logoOne"><a href="https://www.linkedin.com/in/geovanny-torres-hernandez-5b7134272/"><img src="imagenes/linkedin.png" alt="linkedin" id="linkedin"></a>
     <a id="cursosAlura" href="https://www.aluracursos.com/?gclid=EAIaIQobChMIidrTsYKb_wIVowStBh2qmgVHEAAYASAAEgITvPD_BwE"><img src="https://www.aluracursos.com/assets/img/home/alura-logo.1647533644.svg" alt="Cursos alura" class="cursosAlura"></a>
     <a id="githubLink"href="https://github.com/GeoTH03/ChallengeOne-Encriptador"><img src="imagenes/github.png" alt="GitHub Logo" id="logoGitHub"></a>
