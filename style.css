@@ -47,15 +47,15 @@ h3{
 }
 .aviso1{
     position: absolute;
-    top: 385px;
-    left: 58px;
-    font-size: 30px;
+    top: 400px;
+    left: 75px;
+    font-size: 28px;
     color: #65bfff;
 }
 .aviso2{
     position: absolute;
-    top: 435px;
-    left: 20px;
+    top: 461px;
+    left: 5%;
     font-size: 20px;
     color: #00ffad;
 }
@@ -188,4 +188,204 @@ footer a{
     position: absolute;
     top: 75px;
     left: 125px;
+}
+@media  screen and (max-width:480px) {
+    body{
+        background: #2C2C2C;
+    }
+    .encabezado{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 106px;
+        background: #b4cbd1;
+    }
+    #LogoAlura{       
+        position: relative;
+        width: 27px;
+        height: 28px;
+        top: 40px;
+        left: 18px;
+    }
+    #advertencia{    
+        position: absolute;
+        height: 19px;
+        width: 19px;
+        top: 86px;
+        left: 21px;
+    }
+    h3{    
+        position: absolute;
+        top: 89px;
+        left: 43px;
+    }
+    .caja{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background: linear-gradient(#ddeaf3bd,#000000b5),linear-gradient(#37706fde,#a58a8ab8);
+    }
+    .caja2{
+        display: inline-block;
+        position: relative;
+        width: 91%;
+        height: 38%;
+        background:#000000a6;
+        box-shadow: 10px -10px 19px 2px rgb(0 0 0 / 78%);
+        left: 2%;
+        top: 60%;
+        border-radius: 21px;
+    }
+    .aviso1{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 28px;
+        color: #65bfff;
+    }
+    .aviso2{
+        position: absolute;
+        top: 78px;
+        left: 24px;
+        font-size: 20px;
+        color: #00ffad;
+    }
+    .inputText{
+        position: absolute;
+        height: 40%;
+        width: 90%;
+        top: 2px;
+        left: 0px;
+        font-size: 23px;
+        background: #d7d7d7;
+        color: white;
+        border-radius: 2pc;
+        padding: 4px 10px 0px 16px;
+    }
+    .outPutText{    
+        position: absolute;
+        width: 95%;
+        height: 80%;
+        left: 2px;
+        top: 4px;
+        background: #ffffff00;
+        font-size: 23px;
+        padding: 2px 2px 2px 2px;
+        color: aquamarine;
+        border: none;
+    }
+   
+    .outPutText:focus{
+        outline: none;
+    }
+    #botones {
+        position: relative;
+        display: inline;
+        top: -197px;
+        font-size: 12px;
+        border-radius: 21px;
+        background: none;
+        padding: 0px 50px 3px 49px;
+    }
+    #encripta{
+        position: absolute;
+        width: 169px;
+        height: 42px;
+        left: 0px;
+        border-radius: 14px;
+        font-size: 23px;
+        background: linear-gradient(#dae3fff0, #e99595a6);    }
+    #encripta:hover{
+        transform: scale(1.09);
+        color: #420099
+    }
+    #desencripta{    
+        position: absolute;
+        width: 169px;
+        height: 42px;
+        left: 200px;
+        border-radius: 14px;
+        font-size: 23px;
+        background: linear-gradient(#dae3fff0, #e99595a6);
+    }
+    #desencripta:hover{
+        transform: scale(1.09);
+        color: #008207;
+        outline:invert;
+    }
+    #copiar{
+        position: absolute;
+        width: 169px;
+        height: 42px;
+        left: 93px;
+        top: 186px;
+        border-radius: 14px;
+        font-size: 23px;
+        background: linear-gradient(#dae3fff0, #e99595a6);    }
+    #copiar:hover{
+        transform: scale(1.09);
+        color: #8d0000;
+    }
+    #mensajeInvisible{        
+        position: absolute;
+        display: inline;
+        width: 57%;
+        height: 19px;
+        top: 428px;
+        left: 66px;
+        font-size: 16px;
+        border-radius: 1pc;
+    }
+    footer{
+        position: relative;
+        top: 17px;
+        width: 100%;
+        height: 300px;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .logoOne{
+        position: absolute;
+        top: 150px;
+        left: 107px;
+    }
+    footer a{
+        left: 0px;
+        position: absolute;
+        top: 50%;
+    }
+    #cursosAlura{
+        left: 18px;
+        position: absolute;
+    }
+    #linkedin{   
+        width: 58px;
+        position: absolute;
+        top: 50%;
+        left: 311px;
+    }
+    .cursosAlura{
+        position: absolute;
+        width: 82px;
+        height: 62px;
+        top: 0px;
+        left: 3px;
+    }
+    #githubLink{    
+        left: 0px;
+        position: absolute;
+        top: 50%;
+    }
+    #logoGitHub{   
+        width: 55px;
+        height: 57px;
+        position: absolute;
+        top: 0px;
+        left: 233px;
+    }
 }

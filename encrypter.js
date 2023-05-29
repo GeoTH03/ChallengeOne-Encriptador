@@ -18,12 +18,17 @@ function iniciaEncriptado(){
             cajaEncriptado.style.background="#000000a6";
             mensaje1.style.visibility = "hidden";
             mensaje2.style.visibility = "hidden";
+            inputText.focus();
         }
         else{
             if(tamanio.clientWidth > 980){
-            cajaEncriptado.style.background="url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";
-            mensaje1.style.visibility = "visible";
-            mensaje2.style.visibility = "visible";
+                cajaEncriptado.style.background="url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";
+                mensaje1.style.visibility = "visible";
+                mensaje2.style.visibility = "visible";
+            }
+            if(tamanio.clientWidth < 980){
+                mensaje1.style.visibility = "visible";
+                mensaje2.style.visibility = "visible";
             }
         }
 }
@@ -74,23 +79,17 @@ function quitaMensaje(){
     mensajeCopiado.style.background="none";
 }
 function leeAreaEncriptado(){//función lee lo que hay en el textarea a encriptar
-    if(outputText.value.length > 0 ){//condicion: si el valor es mayor a 0 se ejecuta
-        outputText.value="";//se le asigna al textarea un string vacio ó sin valor
-          if(tamanio.clientWidth > 980){//condición: si el tamaño de pantalla es mayor a 980px
-                cajaEncriptado.style.background= "url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";//se le asigna un background con imagen
-                outputText.value = "";
-                mensaje1.style.visibility = "visible";//se hace visible el mensaje
-                mensaje2.style.visibility = "visible";
-            }
-         
+   if(inputText.value.length <=0){
+    if(tamanio.clientWidth > 980){
+        cajaEncriptado.style.background="url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";
+        mensaje1.style.visibility ="visible";
+        mensaje2.style.visibility ="visible";
+        outputText.value="";
     }
-    else{   
-       
-        if(tamanio.clientWidth > 980){//condición: si el tamaño de pantalla es mayor a 980px
-            cajaEncriptado.style.background= "url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";//se le asigna un background con imagen
-            outputText.value = "";
-            mensaje1.style.visibility = "visible";//se hace visible el mensaje
-            mensaje2.style.visibility = "visible";
-        }
+    if(tamanio.clientWidth < 480){
+        mensaje1.style.visibility ="visible";
+        mensaje2.style.visibility ="visible";
+        outputText.value="";
     }
+   }
 }
