@@ -1,23 +1,33 @@
+body{
+  background:#2c2b2a7d;
+}
 .encabezado{
     position: relative;
     display: flex;
-    width: 1366px;
+    width: 1360px;
     height: 90px;
-    background: linear-gradient(#2e5c6aa6,#4a67708c),linear-gradient(#161e20a1,#2a6e8599);
+    background: #b4cbd1;
+}
+#LogoAlura{    
+    position: relative;
+    width: 30px;
+    height: 40px;
+    top: 40px;
+    left: 30px;
 }
 .caja{
     display: inline-block;
     position: relative;
     width: 1360px;
     height: 530px;
-    background: linear-gradient(#4b5c68bd,#0f3d4cb5),linear-gradient(#69fffbde,#000000b8);
+    background: linear-gradient(#ddeaf3bd,#000000b5),linear-gradient(#37706fde,#a58a8ab8);
 }
 .caja2{
     display: inline-block;
     position: relative;
     width: 445px;
     height: 570px;
-    background: url(imagenes/Muneco.png) no-repeat center 56px /80% #a3c3eb;
+    background: url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6;
     box-shadow: 10px -10px 19px 2px rgb(0 0 0 / 78%);
     left: 804px;
     top: -42px;
@@ -28,12 +38,14 @@
     top: 385px;
     left: 58px;
     font-size: 30px;
+    color: #65bfff;
 }
 .aviso2{
     position: absolute;
     top: 435px;
     left: 20px;
     font-size: 20px;
+    color: #00ffad;
 }
 .inputText{
     position: absolute;
@@ -42,17 +54,22 @@
     top: 10px;
     left: 90px;
     font-size: 23px;
-    background: #b3cfcfa6;
+    background: #61817e7a;
+    color: white;
+    border-radius: 2pc;
+    padding: 4px 10px 0px 16px;
 }
 .outPutText{
     position: absolute;
     width: 423px;
-    height: 513px;   
+    height: 513px;
     left: 8px;
     top: 10px;
     background: #ffffff00;
     font-size: 23px;
     padding: 2px 2px 2px 2px;
+    color: aquamarine;
+    border: none;
 }
 #botones {
     position: relative;
@@ -62,7 +79,7 @@
     top: -86px;
     font-size: 12px;
     border-radius: 21px;
-    background: #6097c754;
+    background: none;
     padding: 0px 50px 3px 49px;
 }
 #encripta{
@@ -72,6 +89,11 @@
     left: 140px;
     border-radius: 14px;
     font-size: 23px;
+    background: linear-gradient(#dae3fff0, #e99595a6);
+}
+#encripta:hover{
+    transform: scale(1.09);
+    color: #420099
 }
 #desencripta{
     position: absolute;
@@ -80,6 +102,11 @@
     left: 480px;
     border-radius: 14px;
     font-size: 23px;
+    background: linear-gradient(#dae3fff0, #e99595a6);
+}
+#desencripta:hover{
+    transform: scale(1.09);
+    color: #008207;
 }
 #copiar{
     position: absolute;
@@ -87,5 +114,41 @@
     height: 42px;
     left: 922px;
     border-radius: 14px;
-    font-size: 23px;
+    font-size: 23px;    
+    background: linear-gradient(#dae3fff0, #e99595a6);
+}
+#copiar:hover{
+    transform: scale(1.09);
+    color: #8d0000;
+}
+footer{
+    position: relative;
+    width: 1360px;
+    height: 200px;
+    background: #2c2c2c;
+    top: -94px;
+}
+.logoOne{
+    position: absolute;
+    top: 80px;
+    left:120px;
+}
+footer a{
+    left: 350px;
+    position: absolute;
+}
+#cursosAlura{
+    left: 18px;
+    position: absolute;
+}
+#linkedin{    
+    width: 58px;
+    position: absolute;
+    top: 75px;
+}
+.cursosAlura{
+    position: absolute;
+    width: 82px;
+    height: 62px;
+    top: 75px;
 }
