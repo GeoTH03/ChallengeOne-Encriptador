@@ -18,6 +18,8 @@ function iniciaEncriptado(){
             cajaEncriptado.style.background="#000000a6";
             mensaje1.style.visibility = "hidden";
             mensaje2.style.visibility = "hidden";
+            btnCopiar.style.visibility="visible";            
+            cajaEncriptado.style.height ="50%"
             inputText.focus();
         }
         else{
@@ -29,6 +31,7 @@ function iniciaEncriptado(){
             if(tamanio.clientWidth < 980){
                 mensaje1.style.visibility = "visible";
                 mensaje2.style.visibility = "visible";
+                cajaEncriptado.style.height ="35%"
             }
         }
 }
@@ -39,12 +42,15 @@ function iniciaDesencriptado(){
         cajaEncriptado.style.background="#000000a6";
         mensaje1.style.visibility = "hidden";
         mensaje2.style.visibility = "hidden";
+        cajaEncriptado.style.height ="50%"
+        btnCopiar.style.visibility="visible";
     }
     else{
         if(tamanio.clientWidth > 980){
         cajaEncriptado.style.background="url(imagenes/Muneco.png) no-repeat center 56px /80% #000000a6";
         mensaje1.style.visibility = "visible";
         mensaje2.style.visibility = "visible";
+        
         }
     }
 }
@@ -72,7 +78,7 @@ function copiar(){
     window.getSelection().removeAllRanges();
     mensajeCopiado.innerText ="¡Texto copiado al portapapeles!";
     mensajeCopiado.style.background="#00ffa1cf";
-    setInterval(quitaMensaje,1000);
+    setInterval(quitaMensaje,1500);
 }
 function quitaMensaje(){
     mensajeCopiado.innerText="";
@@ -85,11 +91,14 @@ function leeAreaEncriptado(){//función lee lo que hay en el textarea a encripta
         mensaje1.style.visibility ="visible";
         mensaje2.style.visibility ="visible";
         outputText.value="";
+    
     }
-    if(tamanio.clientWidth < 480){
+    if(tamanio.clientWidth < 980){
         mensaje1.style.visibility ="visible";
         mensaje2.style.visibility ="visible";
         outputText.value="";
+        btnCopiar.style.visibility="hidden";
+        cajaEncriptado.style.height ="35%";
     }
    }
 }
