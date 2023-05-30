@@ -18,9 +18,11 @@ function iniciaEncriptado(){
             cajaEncriptado.style.background="#000000a6";
             mensaje1.style.visibility = "hidden";
             mensaje2.style.visibility = "hidden";
-            btnCopiar.style.visibility="visible";            
-            cajaEncriptado.style.height ="50%"
             outputText.focus();
+            if(tamanio.clientWidth<980){
+            cajaEncriptado.style.height ="50%"            
+            btnCopiar.style.visibility="visible";
+            }
         }
         else{
             if(tamanio.clientWidth > 980){
@@ -42,8 +44,11 @@ function iniciaDesencriptado(){
         cajaEncriptado.style.background="#000000a6";
         mensaje1.style.visibility = "hidden";
         mensaje2.style.visibility = "hidden";
-        cajaEncriptado.style.height ="50%"
-        btnCopiar.style.visibility="visible";
+        
+        if(tamanio.clientWidth<980){
+            cajaEncriptado.style.height ="50%"            
+            btnCopiar.style.visibility="visible";
+            }
         outputText.focus();
     }
     else{
